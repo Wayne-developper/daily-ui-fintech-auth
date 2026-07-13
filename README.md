@@ -17,11 +17,11 @@ The project presents **Dolara**, a fictional financial brand, through two connec
 
 ### Hero Page
 
-![Dolara hero page](./screenshots/hero-desktop.png)
+![Dolara hero page](./screenshots/screenshot-hero.png)
 
 ### Authentication Screen
 
-![Dolara authentication screen](./screenshots/auth-mobile.png)
+![Dolara authentication screen](./screenshots/dolara-sign-in.png)
 
 ## Features
 
