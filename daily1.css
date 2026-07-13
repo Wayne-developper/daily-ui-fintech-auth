@@ -1,0 +1,186 @@
+:root {
+    --background-color: #1c2742;
+    --button-color: #2563eb;
+    --button-hover-color: #0b1120;
+    --title-color: #172033;
+    --paragraph-color: #5f6673;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Grande section colorée */
+.hero-section {
+    min-height: 100vh;
+    padding-bottom: 70px;
+    background-color: var(--background-color);
+}
+
+/* Lien Support */
+.support-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Conteneur général */
+.hero-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Carte contenant le texte et l’image */
+.hero-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Partie texte */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px 25px 22px 35px;
+
+    /*
+       haut droite bas gauche
+       55px à gauche donne plus d'espace horizontal
+    */
+    padding: 28px 28px 18px 48px;
+}
+
+.hero-content h1 {
+    margin-bottom: 14px;
+    color: var(--title-color);
+    font-size: 2rem;
+}
+
+.hero-content p {
+    margin-bottom: 14px;
+    color: var(--paragraph-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Bouton */
+.hero-button {
+    width: fit-content;
+    padding: 9px 22px;
+
+    color: white;
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 22px;
+}
+
+.hero-button:hover {
+    color: white;
+    background-color: var(--button-hover-color);
+}
+
+/* Partie image */
+.hero-image-container {
+    min-height: 230px;
+    min-height: 230px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    min-height: 0;
+    object-fit: cover;
+}
+
+/* Texte sous la carte */
+.features-text {
+    max-width: 820px;
+    margin: 45px auto 0;
+    color: white;
+}
+
+.features-text h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.features-text p {
+    max-width: 700px;
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Tablettes et téléphones */
+@media (max-width: 991px) {
+    .hero-container {
+        padding-top: 15px;
+    }
+
+    .hero-content {
+        padding: 35px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-image-container {
+        min-height: 270px;
+    }
+
+    .hero-image {
+        height: 270px;
+        min-height: 270px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-content {
+        padding: 30px 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .features-text h2 {
+        font-size: 2rem;
+    }
+}

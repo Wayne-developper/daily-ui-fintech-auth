@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dolara - Sign in</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+    <main class="signin-page">
+        <div class="signin-container">
+            <!-- Logo -->
+            <a href="#" class="brand-logo">
+                <i class="bi bi-layers-fill"></i>
+                <span>Dolara</span>
+            </a>
+
+            <!-- Titre -->
+            <div class="signin-heading">
+                <h1>Sign in</h1>
+
+                <p>
+                    Don't have an account?
+                    <a href="#">Create now</a>
+                </p>
+            </div>
+
+            <!-- Formulaire -->
+            <form class="signin-form">
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control custom-input"
+                        placeholder="example@gmail.com"
+                        required
+                    >
+                </div>
+
+                <!-- Mot de passe -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="password"
+                            class="form-control custom-input"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                        >
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Remember et mot de passe oublié -->
+                <div class="form-options">
+
+                    <label class="remember-option">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#" class="forgot-link">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+                <!-- Bouton principal -->
+                <button type="submit" class="signin-button">
+                    Sign in
+                </button>
+
+                <!-- Séparation -->
+                <div class="divider">
+                    <span></span>
+                    <p>OR</p>
+                    <span></span>
+                </div>
+
+                <!-- Google -->
+                <button type="button" class="social-button">
+                    <span class="google-icon">G</span>
+                    <span>Continue with Google</span>
+                </button>
+
+                <!-- Facebook -->
+                <button type="button" class="social-button">
+                    <span class="facebook-icon">f</span>
+                    <span>Continue with Facebook</span>
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="sign.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+:root {
+    --brand-color: #1c2742;
+    --brand-dark: #11192c;
+    --brand-light: #34415f;
+
+    --page-background: #f2f4f8;
+    --text-color: #151820;
+    --paragraph-color: #7a8090;
+    --border-color: #dfe3ea;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--page-background);
+    color: var(--text-color);
+}
+
+/* Page complète */
+.signin-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grand bloc blanc */
+.signin-container {
+    width: 100%;
+    max-width: 560px;
+
+    padding: 45px 55px 55px;
+
+    background-color: white;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 45px rgba(17, 25, 44, 0.12);
+}
+
+/* Logo */
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 55px;
+
+    color: var(--brand-color);
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.brand-logo i {
+    font-size: 1.8rem;
+}
+
+/* Titre */
+.signin-heading {
+    margin-bottom: 35px;
+}
+
+.signin-heading h1 {
+    margin-bottom: 15px;
+
+    font-size: 3rem;
+    font-weight: 750;
+    letter-spacing: -1px;
+}
+
+.signin-heading p {
+    margin: 0;
+
+    color: var(--paragraph-color);
+    font-size: 1rem;
+}
+
+.signin-heading a,
+.forgot-link {
+    color: var(--brand-color);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Groupes du formulaire */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #626978;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Champs */
+.custom-input {
+    height: 58px;
+    padding: 0 18px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    font-size: 1rem;
+    box-shadow: none;
+}
+
+.custom-input:focus {
+    border-color: var(--brand-color);
+    box-shadow: 0 0 0 3px rgba(28, 39, 66, 0.12);
+}
+
+/* Champ de mot de passe */
+.password-field {
+    position: relative;
+}
+
+.password-field .custom-input {
+    padding-right: 60px;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 46px;
+
+    border: none;
+    border-left: 1px solid var(--border-color);
+    background: transparent;
+
+    color: var(--brand-color);
+    font-size: 1.2rem;
+}
+
+/* Remember et Forgot */
+.form-options {
+    margin: 5px 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #626978;
+    cursor: pointer;
+}
+
+.remember-option input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: var(--brand-color);
+}
+
+.forgot-link {
+    font-size: 0.95rem;
+}
+
+/* Bouton Sign in */
+.signin-button {
+    width: 100%;
+    height: 58px;
+
+    color: white;
+    background-color: var(--brand-color);
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.signin-button:hover {
+    background-color: var(--brand-dark);
+}
+
+.signin-button:active {
+    transform: scale(0.99);
+}
+
+/* Séparateur */
+.divider {
+    margin: 35px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.divider p {
+    margin: 0;
+
+    color: var(--paragraph-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Boutons sociaux */
+.social-button {
+    position: relative;
+
+    width: 100%;
+    height: 58px;
+    margin-bottom: 18px;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #555d70;
+    background-color: white;
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.social-button:hover {
+    background-color: #f7f8fa;
+    border-color: #c7ccd5;
+}
+
+/* Icônes Google et Facebook */
+.google-icon,
+.facebook-icon {
+    position: absolute;
+    left: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.google-icon {
+    color: #4285f4;
+}
+
+.facebook-icon {
+    color: white;
+    background-color: #1877f2;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+}
+
+/* Téléphone */
+@media (max-width: 576px) {
+    .signin-page {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .signin-container {
+        max-width: none;
+        min-height: 100vh;
+
+        padding: 35px 24px 45px;
+
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .brand-logo {
+        margin-bottom: 45px;
+        font-size: 1.7rem;
+    }
+
+    .signin-heading h1 {
+        font-size: 2.6rem;
+    }
+
+    .form-options {
+        align-items: flex-start;
+    }
+
+    .forgot-link {
+        text-align: right;
+    }
+}
