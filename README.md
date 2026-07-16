@@ -9,7 +9,7 @@ The project presents **Dolara**, a fictional financial brand, through two connec
 
 ## Live Demo
 
-- [Project Overview](https://wayne-developper.github.io/daily-ui-day-001-fintech-auth/)
+- [Project Overview](https://wayne-developper.github.io/daily-ui-fintech-auth/)
 - [Hero Page](https://wayne-developper.github.io/daily-ui-day-001-fintech-auth/hero/)
 - [Authentication Page](https://wayne-developper.github.io/daily-ui-day-001-fintech-auth/auth/)
 
